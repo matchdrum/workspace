@@ -1,0 +1,73 @@
+{
+	"devtools_port": 9090,
+	"licenseKey": "openfin-demo-license-key",
+	"runtime": {
+		"arguments": "",
+		"version": "38.126.82.69"
+	},
+	"platform": {
+		"uuid": "integrate-with-rss",
+		"icon": "http://localhost:8080/favicon.ico",
+		"autoShow": false,
+		"providerUrl": "http://localhost:8080/platform/provider.html",
+		"preventQuitOnLastWindowClosed": true,
+		"permissions": {
+			"System": {
+				"openUrlWithBrowser": {
+					"enabled": true,
+					"protocols": ["mailto"]
+				}
+			}
+		},
+		"defaultWindowOptions": {
+			"permissions": {
+				"System": {
+					"openUrlWithBrowser": {
+						"enabled": true,
+						"protocols": ["mailto"]
+					}
+				}
+			}
+		}
+	},
+	"shortcut": {
+		"company": "OpenFin",
+		"description": "A way of showing examples of what OpenFin can do.",
+		"icon": "http://localhost:8080/favicon.ico",
+		"name": "Integrate with RSS - v19.0.0",
+		"target": ["desktop", "start-menu"]
+	},
+	"customSettings": {
+		"rss": {
+			"notification": {
+				"icon": "",
+				"title": ""
+			},
+			"icons": {
+				"rss": "http://localhost:8080/icons/rss.svg",
+				"rssEntry": "http://localhost:8080/icons/rss-entry.svg"
+			},
+			"proxyUrl": "http://localhost:8080/proxy",
+			"feedView": "http://localhost:8080/views/rss-feed.html",
+			"feeds": [
+				{
+					"id": "openfin-tech",
+					"url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC61HthWWPCif1wrYNafuyqQ"
+				},
+				{
+					"id": "openfin-versions",
+					"url": "https://cdn.openfin.co/release/meta/rss"
+				},
+				{
+					"id": "youtube-trending",
+					"url": "https://www.youtube.com/feeds/videos.xml?playlist_id=PLrEnWoR732-BHrPp_Pm8_VleD68f9s14-"
+				}
+			],
+			"pollingInterval": 60
+		},
+		"notification": {
+			"icon": "https://developer.openfin.co/favicon.ico",
+			"title": "Rss Notification Center"
+		}
+	}
+}
